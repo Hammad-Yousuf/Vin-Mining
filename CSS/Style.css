@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    width: 100%;
+    height: 65em;
+    padding: 5rem;
+    background:  url('../Images/Background.png');
+    background-position: top;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+h1{
+    color: #fff;
+    font-weight: bolder;
+}
+
+.c-form{
+    width: 20em;
+}
+label{
+    color: #fff;
+    margin-bottom: 0.3em;
+    font-weight: bold;
+}
+.d-f{
+    display: flex;
+    justify-content: space-between;
+}
+.c__input{
+    width: 100%;
+    border: 3px solid #999999;
+    color: white !important;
+    font-weight: bold;
+    padding: 0.2em 1em;
+    margin-bottom: 0.5em;
+    background: inherit;
+}
+.c-btn{
+    width: 100%;
+    padding-block: 0.5em;
+    background-color: #662481;
+    color: #fff;
+}

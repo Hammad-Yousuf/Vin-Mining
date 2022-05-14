@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+::-webkit-scrollbar{
+    width: 1em;
+}
+::-webkit-scrollbar-track{
+    background: linear-gradient(#171717, #141414, #171717);
+    border: 4px solid transparent;
+}
+::-webkit-scrollbar-thumb{
+    background: #222;
+}
+body{
+    width: 100%;
+    padding: 5rem;
+    position: relative;
+}
+.c-icon-container{
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+}
+.c__icon{
+    color: white;
+    font-size: 2em;
+    content: "f";
+}

@@ -1,0 +1,25 @@
+body{
+    background: url('../Images/Background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    display: grid;
+    grid-template-rows: 2.8fr 1fr;
+    place-items: center ;
+    width: 100%;
+}
+
+.c-text{
+    text-align: center;
+    color: #fff;
+}
+.c__welcome{
+    font-size: 3.5em;
+    font-weight: 600;
+}
+.--is-title{
+    color: #662480;
+}
+.c__verify{
+    font-size: 1.5em;
+}

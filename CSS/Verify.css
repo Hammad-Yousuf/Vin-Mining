@@ -4,7 +4,7 @@ body{
     background-repeat: no-repeat;
     background-position: top;
     display: grid;
-    grid-template-rows: 2.8fr 1fr;
+    grid-template-rows: 20em 1fr;
     place-items: center ;
     width: 100%;
 }
@@ -22,4 +22,5 @@ body{
 }
 .c__verify{
     font-size: 1.5em;
+    line-height: 2;
 }

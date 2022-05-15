@@ -6,9 +6,7 @@
 ::-webkit-scrollbar{
     width: .5em;
 }
-::-webkit-scrollbar-track:hover ::-webkit-scrollbar{
-    width: 1em;
-}
+
 ::-webkit-scrollbar-track{
     background: #141414;
     border: 4px solid transparent;
@@ -21,16 +19,26 @@ body{
     padding: 5rem;
     position: relative;
 }
-.c-icon-container{
+.c-icon-main-container{
     position: absolute;
+    display: flex;
     top: 0;
     right: 0;
-    display: flex;
+    padding: 1em;
+    gap: 0.5em;
+}
+.c-icon-container{
+    background-color: #662481;
+    padding: 1em;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 250ms ease-in-out;
+}
+.c-icon-container:hover{
+    transform: scale(1.05);
+    background-color: #6b2b84;
 }
 .c__icon{
-    color: white;
-    font-size: 2em;
-}
-.--plus{
-    font-size: 4em;
+    width: 1.5em;
+    aspect-ratio: 1;
 }

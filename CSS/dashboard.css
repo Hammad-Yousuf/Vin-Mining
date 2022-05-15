@@ -1,0 +1,164 @@
+:root{
+    --pt: 10em;
+}
+.c-dashboard-container{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(12, auto);
+    column-gap: 1em;
+}
+aside{
+    /* width: fit-content; */
+    height: fit-content;
+    padding: 2em;
+    border: 2px solid purple;
+    border-radius: 10px;
+    padding-top: var(--pt);
+    grid-row: 1/13 span;
+}
+ul{
+    padding: 0 !important;
+    padding-bottom: 3em !important;
+}
+.c-sidebar__item{
+    width: 10em;
+    display: flex;
+    place-items: flex-end;
+    margin-bottom: 2em;
+    gap: 2em;
+}
+.c-sidebar__icon{
+    width: 2em;
+}
+.--package-icon{
+    width: .7em;
+    margin: 0;
+    padding: 0;
+}
+.--package-icon.--is-last{
+    transform: rotate(-10deg);
+    margin-inline-start: 4px;
+}
+.c-sidebar__link{
+    text-align: center !important;
+    text-decoration: none;
+    color: #fff;
+}
+.c-sidebar__link:hover{
+
+    color: #aaa;
+}
+i, a{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+a{
+    justify-content: center;
+    font-weight: bold;
+}
+
+/* Sidebar Image */
+
+.c-sidebar__imgContainer{
+    width: 100%;
+    height: 15em;
+    border: 2px solid purple;
+    border-radius: 10px;
+    padding: .5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: .5em    ;
+    grid-row: 2/3;
+
+}
+.c-sidebar-img{
+    height: 100%;
+    background: rgba(102, 36, 129,0.2);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+    font-size: 3em;
+}
+.c-sidebar-btn{
+    width: 90%;
+    margin-inline: auto;
+    background-color: var(--purple);
+    color: #fff;
+    border-radius: 10px;
+    padding: 0.3em 1em;
+}
+
+/* User Details Card */
+
+.c-user-card{
+    background-color: rgba(102, 36, 129, 0.4);
+    width: fit-content;
+    padding: 1em;
+    margin-top: var(--pt);
+    border-radius: 20px;
+    grid-row: 1 / 5 span;
+}
+
+.c-user__img{
+    width: 8em;
+    aspect-ratio: 1;
+    background: #fff;
+    border-radius: 50%;
+    margin-inline: auto;
+    margin-bottom: 1em;
+}
+
+.c-user-card> h1,
+.c-user-card> h2,
+.c-user-card> h3{
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+}
+.c-user__name,
+.c-user__status-head{
+    font-size: 1.3em;
+}
+.c-user__email{
+    font-size: .8em;
+}
+.c-user__id,
+.c-user__status,
+.c-authentication-head,
+.c-authentication-status{
+    font-size: .7em;
+}
+
+h2.c-user__status{
+    color: #00ff00;
+}
+h2.c-authentication-status{
+    color:#ff0000;
+}
+
+/* Welcome Header */
+
+.c-welcome-container{
+    height: fit-content;
+    grid-column: 3/6 span;
+    grid-row: 1 / 3 span;
+    background-color: beige;
+    display: flex;
+}
+
+.c-page-title-container{
+    grid-column: 3/6 span;
+    grid-row: 3/4 span;
+}
+
+/* Details Form */
+
+.c-form-container{
+    grid-column: 3/6;
+    grid-row: 5 / 13;
+}

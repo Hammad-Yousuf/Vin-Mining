@@ -189,6 +189,8 @@ h2.c-authentication-status{
     padding: 0.2em 2em;
     border-radius: 20px;
     margin: 0 !important;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 
 /* Page title */

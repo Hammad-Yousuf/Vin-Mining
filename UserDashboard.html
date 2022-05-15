@@ -74,13 +74,13 @@
         </section>
         <section class="c-welcome-container">
             <div class="c__welcomeContainer">
-                <h1 class="c__welcomeHead">Welcome Back, Igor</h1>
+                <h1 class="c__welcomeHead">Welcome Back, <span class="c-user-name">Igor</span></h1>
                 <h2 class="c__welcomeStatus">Ambassador</h2>
             </div>
             <div class="c__profileContainer">
                 <div class="c-profile-img"></div>
                 <div class="c-profile_details">
-                    <h1 class="c_usersName">Igor</h1>
+                    <h1 class="c__usersName">Igor</h1>
                     <p class="c__userType">Premium User</p>
                 </div>
             </div>
@@ -89,9 +89,21 @@
             <h1 class="c-page-title">User Profile</h1>
         </section>
         <section class="c-form-container">
-            <form action="" method="post">
-                
+            <form action="" method="post" class="c-form">
+                <div class="c-form-input-container"><label for="dob" class="c__label">Date of Birth</label><input type="date" class="c-form__input"></div>
+                <div class="c-form-input-container"><label for="id-number" class="c__label">Id Number</label><input type="number" class="c-form__input"></div>
+                <div class="c-form-input-container"><label for="address" class="c__label">Address</label><input type="text" class="c-form__input"></div>
+                <div class="c-form-input-container"><label for="city" class="c__label">City</label><input type="text" class="c-form__input"></div>
+                <div class="c-form-input-container"><label for="z-code" class="c__label">Zip Code</label><input type="number" class="c-form__input"></div>
+                <div class="c-form-input-container"><label for="contry" class="c__label">country</label><input type="text" class="c-form__input"></div>
+                <div class="c-form-input-container"><label for="phon" class="c__label">Phone Number</label><input type="phone" class="c-form__input"></div>
+                <div class="c-form-input-container"><label for="email" class="c__label">Email</label><input type="email" class="c-form__input"></div>
+                <div class="c-form-input-container"><label for="pin" class="c__label">Pin Code</label><input type="number" class="c-form__input"></div>
+                <div class="c-form-input-container"><label for="id" class="c__label">Upload ID</label><input type="file" class="c-form_input --file-input"></div>
             </form>
+        </section>
+        <section class="c-form-submit">
+            <input type="submit" value="Finish" class="c-form__btn" name="update">
         </section>
     </section>
 

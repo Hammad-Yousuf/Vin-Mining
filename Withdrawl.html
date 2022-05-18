@@ -4,17 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./CSS/Common.css" />
-    <link rel="stylesheet" href="./css/Settings.css">
-    <link rel="stylesheet" href="./CSS/dashboardCommon.css" />
-    <!-- FontAwesome -->
-    <!-- <link rel="stylesheet" href="./CSS/all.css" /> -->
-    <!-- Bootstrap -->
-
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
-    <title>User Dashboard | Vin Mining | Start Mining With Us</title>
+    <link rel="stylesheet" href="./CSS/Common.css">
+    <!-- <link rel="stylesheet" href="./CSS/dashboard.css"> -->
+    <link rel="stylesheet" href="./CSS/dashboardCommon.css">
+    <link rel="stylesheet" href="./CSS/deposit.css">
+    <link rel="stylesheet" href="./CSS/Withdrawl.css">
+    <title>Deposit | Vin Mining</title>
 </head>
-<body style="padding: 2em 3em">
+<body>
+    
+
     <div class="bg-container">
         <img src="./Images/Background-2.png" alt="" class="bg" />
     </div>
@@ -43,13 +43,13 @@
                         </i>
                         <a class="c-sidebar__link" href="./Deposit.html">Deposit</a>
                     </li>
-                    <li class="c-sidebar__item">
+                    <li class="c-sidebar__item --active">
                         <i>
                             <img src="./Images/Icons/Withdrawl.png" alt="Withdrawl" class="c-sidebar__icon">
                         </i>
                         <a class="c-sidebar__link" href="./Withdrawl.html">Withdrawl</a>
                     </li>
-                    <li class="c-sidebar__item --active">
+                    <li class="c-sidebar__item">
                         <i>
                             <img src="./Images/Icons/Setting.png" alt="Settings" class="c-sidebar__icon">
                         </i>
@@ -63,16 +63,6 @@
             </section>
         </aside>
 
-        <section class="c-user-card">
-            <div class="c-user__img"></div>
-            <h1 class="c-user__name">Igor</h1>
-            <h3 class="c-user__email">Igor@gmail.com</h3>
-            <h1 class="c-user__status-head">Account Status</h1>
-            <h3 class="c-user__id">KYC ID</h3>
-            <h2 class="c-user__status">Verified</h2>
-            <h3 class="c-authentication-head">Account Verification 2FA</h3>
-            <h2 class="c-authentication-status">Enabled</h2>
-        </section>
         <section class="c-welcome-container">
             <div class="c__welcomeContainer">
                 <h1 class="c__welcomeHead">Welcome Back, <span class="c-user-name">Igor</span></h1>
@@ -87,29 +77,46 @@
             </div>
         </section>
         <section class="c-page-title-container">
-            <h1 class="c-page-title">User Profile</h1>
+            <h1 class="c-page-title">Withdrawl</h1>
         </section>
         <section class="c-form-container">
             <form action="" method="post" class="c-form">
-                <div class="c-form-input-container"><label for="dob" class="c__label">Date of Birth</label><input type="date" class="c-form__input"></div>
-                <div class="c-form-input-container"><label for="id-number" class="c__label">Id Number</label><input type="number" class="c-form__input"></div>
-                <div class="c-form-input-container"><label for="address" class="c__label">Address</label><input type="text" class="c-form__input"></div>
-                <div class="c-form-input-container"><label for="city" class="c__label">City</label><input type="text" class="c-form__input"></div>
-                <div class="c-form-input-container"><label for="z-code" class="c__label">Zip Code</label><input type="number" class="c-form__input"></div>
-                <div class="c-form-input-container"><label for="contry" class="c__label">country</label><input type="text" class="c-form__input"></div>
-                <div class="c-form-input-container"><label for="phon" class="c__label">Phone Number</label><input type="phone" class="c-form__input"></div>
-                <div class="c-form-input-container"><label for="email" class="c__label">Email</label><input type="email" class="c-form__input"></div>
-                <div class="c-form-input-container"><label for="pin" class="c__label">Pin Code</label><input type="number" class="c-form__input"></div>
-                <div class="c-form-input-container"><label for="id" class="c__label">Upload ID</label><input type="file" class="c-form_input --file-input"></div>
+                <div>
+                    <div class="c-form-btns-container">
+                        <label for="mode" class="c__label">Mode of Withdrawl</label>
+                        <div class="btns__container">
+                        <button class="c__mode">USDT</button>
+                        <button class="c__mode">ETH</button>
+                        </div>
+                    </div>
+                    <div class="c-form-input-container"><label for="address" class="c__label">Address</label><input type="text" class="c-form__input"></div>
+                    <div class="c-form-input-container"><label for="email" class="c__label">Amount (USDT)</label><input type="email" class="c-form__input"></div>
+                    <div class="c-form-input-container"><label for="pin" class="c__label">Transaction ID</label><input type="number" class="c-form__input"></div>
+                </div>
+                <div class="c-form-btn-container">
+                    <input type="submit" class="c__submit-btn" value="Submit" name="submit">
+                   </div>
             </form>
         </section>
-        <section class="c-form-submit">
-            <input type="submit" value="Finish" class="c-form__btn" name="update">
+
+        <section class="c-deposit-record-container">
+            <table class="c__record">
+                <tr class="c__record-row --is-head">
+                    <th>Amount</th>
+                    <th>Date</th>
+                    <th>Satus</th>
+                    <th>Concept</th>
+                </tr>
+                <tr>
+
+                </tr>
+            </table>
+            <div class="c__report-btn-container">
+                <button class="c__report-btn">Download Report</button>
+            </div>
+
         </section>
     </section>
-
-
-
 
     <!-- <script src="./JS/all.js"></script> -->
     <script

@@ -1,98 +1,3 @@
-:root{
-    --pt: 10em;
-}
-.c-dashboard-container{
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(12, auto);
-    column-gap: 1em;
-    min-height: 100vh;
-}
-aside{
-    /* width: fit-content; */
-    height: fit-content;
-    padding: 2em;
-    border: 2px solid purple;
-    border-radius: 10px;
-    padding-top: var(--pt);
-    grid-row: 1/13 span;
-}
-ul{
-    padding: 0 !important;
-    padding-bottom: 3em !important;
-}
-.c-sidebar__item{
-    width: 10em;
-    display: flex;
-    place-items: flex-end;
-    margin-bottom: 2em;
-    gap: 2em;
-}
-.c-sidebar__icon{
-    width: 2em;
-}
-.--package-icon{
-    width: .7em;
-    margin: 0;
-    padding: 0;
-}
-.--package-icon.--is-last{
-    transform: rotate(-10deg);
-    margin-inline-start: 4px;
-}
-.c-sidebar__link{
-    text-align: center !important;
-    text-decoration: none;
-    color: #fff;
-}
-.c-sidebar__link:hover{
-
-    color: #aaa;
-}
-i, a{
-    width: 50%;
-    display: flex;
-    justify-content: center;
-    cursor: pointer;
-}
-a{
-    justify-content: center;
-    font-weight: bold;
-}
-
-/* Sidebar Image */
-
-.c-sidebar__imgContainer{
-    width: 100%;
-    height: 15em;
-    border: 2px solid purple;
-    border-radius: 10px;
-    padding: .5em;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    gap: .5em    ;
-    grid-row: 2/3;
-
-}
-.c-sidebar-img{
-    height: 100%;
-    background: rgba(102, 36, 129,0.2);
-    border-radius: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #000;
-    font-size: 3em;
-}
-.c-sidebar-btn{
-    width: 90%;
-    margin-inline: auto;
-    background-color: var(--purple);
-    color: #fff;
-    border-radius: 10px;
-    padding: 0.3em 1em;
-}
 
 /* User Details Card */
 
@@ -143,132 +48,19 @@ h2.c-authentication-status{
     color:#ff0000;
 }
 
-/* Welcome Header */
-
-.c-welcome-container{
-    height: fit-content;
-    grid-column: 3/6 span;
-    grid-row: 1 / 3 span;
-    display: flex;
-    justify-content: space-between;
+.c-form{
+    grid-template-columns: repeat(2, 1fr);
 }
 
-.c__welcomeHead{
-    font-size: 2.5em;
-    color: #fff;
-}
-.c-user-name{
-    font-family: arial;
-    font-weight: bolder;
-}
-.c__welcomeStatus{
-    color: var(--purple);
-}
-.c__profileContainer{
-    display: flex;
-    align-items: center;
-    gap: 1em;
-}
-.c-profile-img{
-    width: 3.2em;
-    height: 3.2em;
-    aspect-ratio: 1/1;
-    border: 2px solid #fff;
-    border-radius: 10px;
-}
-.c__usersName{
-    font-size: 2em;
-    padding: 0 0.3em;
-    margin: 2px !important;
-    color: #fff;
-}
-.c__userType{
-    overflow: hidden;
-    min-width: 8em;
-    font-size: 1em;
-    background-color: rgba(102, 36, 129, 0.7);
-    color: #fff;
-    padding: 0.2em 2em;
-    border-radius: 20px;
-    margin: 0 !important;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    text-align: center;
-}
-
-/* Page title */
-
-.c-page-title-container{
-    grid-column: 3/6 span;
-    grid-row: 2/4 span;
-    align-self: flex-start;
-}
-.c-page-title{
-    color: #fff;
-}
-
-/* Details Form */
+/* Form Container */
 
 .c-form-container{
     grid-column: 3 / 6;
     grid-row: 3 / 11;
-}
-.c-form{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-row-gap: 2em;
-}
-.c__label{
-    display: block;
-    color: #fff;
-    font-weight: bold;
-    font-size: 1.3em;
-}
-.c-form__input{
-    width: 90%;
-    background-color: transparent;
-    color: #fff;
-    border: 2px solid #999999;
-    padding: 0.5em 1em;
-}
-.--file-input{
-    position: relative;
-    color: transparent;
-    width: 100%;
-    padding: 0.8em;
-}
-.--file-input::-webkit-file-upload-button{
-    visibility: hidden;
-}
-.--file-input::before{
-    content: 'Upload';
-    display: inline-block;
-    background-color: var(--purple);
-    -webkit-user-select: none;
-    cursor: pointer;
-    color: #fff;
-    font-weight: bold;
-    font-size: 1.1em;
-    margin: 0 auto;
-    padding: 0.3em 1em;
-    border-radius: 20px;
-    width: fit-content;
-    outline: none;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
 }
 
 .c-form-submit{
     grid-column: 3/6;
     grid-row: 12/13;
     padding-block: 5em;
-}
-.c-form__btn{
-    background-color: var(--purple);
-    color: #fff;
-    padding: 0.5em 2em;
-    border-radius: 10px;
-    font-weight: bold;
 }

@@ -1,0 +1,66 @@
+
+.c-page-title-container{
+    height: 25vh;
+    grid-row: 3/4 span;
+    grid-column: 3/5 span;
+}
+
+.c-form-container{
+    grid-column: 3 / 6 span;
+    grid-row: 5 / 10 span;
+}
+.c-form-submit{
+    grid-column: 3/6;
+    grid-row: 12/13;
+    padding-block: 5em;
+}
+.c-form{
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.c__submit-btn{
+    
+    font-size: 2em;
+    font-weight: bold;
+    padding: .3em 1em;
+    border-radius: 20px;
+    background-color: var(--purple);
+    color: #fff;
+}
+.c-deposit-record-container{
+    grid-column: 2/6 span;
+    grid-row: 12/13 span;
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    align-items: center;
+    margin-inline: 4em;
+    padding-inline: 2em ;
+    
+}
+
+.c__record-row{
+    color: #fff;
+}
+.c__record-row.--is-head{
+    box-sizing: border-box;
+    border-bottom: 2px solid #eee;
+}
+.c__record-row th{
+    padding-bottom: 2em;
+}
+.c__report-btn-container{
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+}
+.c__report-btn{
+    background-color: var(--purple);
+    color: #fff;
+    padding: .2em 2em;
+    margin: 2em;
+    border: none;
+    border-radius: 15px;
+}

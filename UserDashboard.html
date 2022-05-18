@@ -1,115 +1,242 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./CSS/Common.css" />
-    <link rel="stylesheet" href="./css/dashboard.css">
     <link rel="stylesheet" href="./CSS/dashboardCommon.css" />
+    <link rel="stylesheet" href="./css/userdashboard.css" />
+    <link rel="shortcut icon" href="./Images/logo.png" type="image/x-icon" />
     <!-- FontAwesome -->
     <!-- <link rel="stylesheet" href="./CSS/all.css" /> -->
     <!-- Bootstrap -->
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
     <title>User Dashboard | Vin Mining | Start Mining With Us</title>
-</head>
-<body style="padding: 2em 3em">
+  </head>
+
+  <body style="padding: 2em 3em">
     <div class="bg-container">
-        <img src="./Images/Background-2.png" alt="" class="bg" />
+      <img src="./Images/Background-2.png" alt="" class="bg" />
     </div>
 
     <section class="c-dashboard-container">
-        <aside class="c-sidebar-container">
-            <nav class="c-sidebar__linkContainer">
-                <ul class="c-sidebar">
-                    <li class="c-sidebar__item">
-                        <i>
-                            <img src="./Images/Icons/Dashboard.png" alt="Dashboard" class="c-sidebar__icon">
-                        </i>
-                        <a class="c-sidebar__link">Dashboard</a>
-                    </li>
-                    <li class="c-sidebar__item">
-                        <i>
-                            <img src="./Images/Icons/Packages.png" alt="Package" class="c-sidebar__icon --package-icon">
-                            <img src="./Images/Icons/Packages.png" alt="Package" class="c-sidebar__icon --package-icon">
-                            <img src="./Images/Icons/Packages.png" alt="Package" class="c-sidebar__icon --package-icon --is-last">
-                        </i>
-                        <a class="c-sidebar__link " href="./package.html">Package</a>
-                    </li>
-                    <li class="c-sidebar__item --active">
-                        <i>
-                            <img src="./Images/Icons/deposit.png" alt="Deposit" class="c-sidebar__icon">
-                        </i>
-                        <a class="c-sidebar__link" href="./Deposit.html">Deposit</a>
-                    </li>
-                    <li class="c-sidebar__item">
-                        <i>
-                            <img src="./Images/Icons/Withdrawl.png" alt="Withdrawl" class="c-sidebar__icon">
-                        </i>
-                        <a class="c-sidebar__link">Withdrawl</a>
-                    </li>
-                    <li class="c-sidebar__item">
-                        <i>
-                            <img src="./Images/Icons/Setting.png" alt="Settings" class="c-sidebar__icon">
-                        </i>
-                        <a class="c-sidebar__link" href="./UserDashboard.html">Settings</a>
-                    </li>
-                </ul>
-            </nav>
-            <section class="c-sidebar__imgContainer">
-                <div class="c-sidebar-img">Gif</div>
-                <button class="c-sidebar-btn">Upload</button>
-            </section>
-        </aside>
-
-        <section class="c-user-card">
-            <div class="c-user__img"></div>
-            <h1 class="c-user__name">Igor</h1>
-            <h3 class="c-user__email">Igor@gmail.com</h3>
-            <h1 class="c-user__status-head">Account Status</h1>
-            <h3 class="c-user__id">KYC ID</h3>
-            <h2 class="c-user__status">Verified</h2>
-            <h3 class="c-authentication-head">Account Verification 2FA</h3>
-            <h2 class="c-authentication-status">Enabled</h2>
+      <aside class="c-sidebar-container">
+        <nav class="c-sidebar__linkContainer">
+          <ul class="c-sidebar">
+            <li class="c-sidebar__item">
+              <i>
+                <img
+                  src="./Images/Icons/Dashboard.png"
+                  alt="Dashboard"
+                  class="c-sidebar__icon"
+                />
+              </i>
+              <a class="c-sidebar__link">Dashboard</a>
+            </li>
+            <li class="c-sidebar__item">
+              <i>
+                <img
+                  src="./Images/Icons/Packages.png"
+                  alt="Package"
+                  class="c-sidebar__icon --package-icon"
+                />
+                <img
+                  src="./Images/Icons/Packages.png"
+                  alt="Package"
+                  class="c-sidebar__icon --package-icon"
+                />
+                <img
+                  src="./Images/Icons/Packages.png"
+                  alt="Package"
+                  class="c-sidebar__icon --package-icon --is-last"
+                />
+              </i>
+              <a class="c-sidebar__link" href="./package.html">Package</a>
+            </li>
+            <li class="c-sidebar__item --active">
+              <i>
+                <img
+                  src="./Images/Icons/deposit.png"
+                  alt="Deposit"
+                  class="c-sidebar__icon"
+                />
+              </i>
+              <a class="c-sidebar__link" href="./Deposit.html">Deposit</a>
+            </li>
+            <li class="c-sidebar__item">
+              <i>
+                <img
+                  src="./Images/Icons/Withdrawl.png"
+                  alt="Withdrawl"
+                  class="c-sidebar__icon"
+                />
+              </i>
+              <a class="c-sidebar__link">Withdrawl</a>
+            </li>
+            <li class="c-sidebar__item">
+              <i>
+                <img
+                  src="./Images/Icons/Setting.png"
+                  alt="Settings"
+                  class="c-sidebar__icon"
+                />
+              </i>
+              <a class="c-sidebar__link" href="./UserDashboard.html"
+                >Settings</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <section class="c-sidebar__imgContainer">
+          <div class="c-sidebar-img">Gif</div>
+          <button class="c-sidebar-btn">Upload</button>
         </section>
-        <section class="c-welcome-container">
-            <div class="c__welcomeContainer">
-                <h1 class="c__welcomeHead">Welcome Back, <span class="c-user-name">Igor</span></h1>
-                <h2 class="c__welcomeStatus">Ambassador</h2>
+      </aside>
+      <section class="c-welcome-container">
+        <div class="c__welcomeContainer">
+          <h1 class="c__welcomeHead">
+            Welcome Back, <span class="c-user-name">Igor</span>
+          </h1>
+          <h2 class="c__welcomeStatus">Ambassador</h2>
+        </div>
+        <div class="c__profileContainer">
+          <div class="c-profile-img"></div>
+          <div class="c-profile_details">
+            <h1 class="c__usersName">Igor</h1>
+            <p class="c__userType">Premium User</p>
+          </div>
+        </div>
+      </section>
+      <section class="c-main-dashboard-container">
+        <div class="c-package-cards-container">
+          <div class="c-package-card">
+            <div class="c-package-details">
+              <img
+                src="./Images/Etherium-black.png"
+                alt="Green T"
+                class="c__package-img"
+              />
+              <div class="c__details">
+                <h3 class="c-details__title">USDT Balance VIN MINING</h3>
+                <h4 class="c__package-balance">1,0000200 &nbsp;&nbsp; ETH</h4>
+              </div>
             </div>
-            <div class="c__profileContainer">
-                <div class="c-profile-img"></div>
-                <div class="c-profile_details">
-                    <h1 class="c__usersName">Igor</h1>
-                    <p class="c__userType">Premium User</p>
-                </div>
+          </div>
+          <div class="c-package-card">
+            <div class="c-package-details">
+              <img
+                src="./Images/Etherium-black.png"
+                alt="Green T"
+                class="c__package-img"
+              />
+              <div class="c__details">
+                <h3 class="c-details__title">USDT Balance VIN MINING</h3>
+                <h4 class="c__package-balance">1,0000200 &nbsp;&nbsp; ETH</h4>
+              </div>
             </div>
-        </section>
-        <section class="c-page-title-container">
-            <h1 class="c-page-title">User Profile</h1>
-        </section>
-        <section class="c-form-container">
-            <form action="" method="post" class="c-form">
-                <div class="c-form-input-container"><label for="dob" class="c__label">Date of Birth</label><input type="date" class="c-form__input"></div>
-                <div class="c-form-input-container"><label for="id-number" class="c__label">Id Number</label><input type="number" class="c-form__input"></div>
-                <div class="c-form-input-container"><label for="address" class="c__label">Address</label><input type="text" class="c-form__input"></div>
-                <div class="c-form-input-container"><label for="city" class="c__label">City</label><input type="text" class="c-form__input"></div>
-                <div class="c-form-input-container"><label for="z-code" class="c__label">Zip Code</label><input type="number" class="c-form__input"></div>
-                <div class="c-form-input-container"><label for="contry" class="c__label">country</label><input type="text" class="c-form__input"></div>
-                <div class="c-form-input-container"><label for="phon" class="c__label">Phone Number</label><input type="phone" class="c-form__input"></div>
-                <div class="c-form-input-container"><label for="email" class="c__label">Email</label><input type="email" class="c-form__input"></div>
-                <div class="c-form-input-container"><label for="pin" class="c__label">Pin Code</label><input type="number" class="c-form__input"></div>
-                <div class="c-form-input-container"><label for="id" class="c__label">Upload ID</label><input type="file" class="c-form_input --file-input"></div>
-            </form>
-        </section>
-        <section class="c-form-submit">
-            <input type="submit" value="Finish" class="c-form__btn" name="update">
-        </section>
+          </div>
+          <div class="c-package-card">
+            <div class="c-package-details">
+              <img
+                src="./Images/Etherium-black.png"
+                alt="Green T"
+                class="c__package-img"
+              />
+              <div class="c__details">
+                <h3 class="c-details__title">USDT Balance VIN MINING</h3>
+                <h4 class="c__package-balance">1,0000200 &nbsp;&nbsp; ETH</h4>
+              </div>
+            </div>
+          </div>
+          <div class="c-package-card">
+            <div class="c-package-details">
+              <img
+                src="./Images/Etherium-black.png"
+                alt="Green T"
+                class="c__package-img"
+              />
+              <div class="c__details">
+                <h3 class="c-details__title">USDT Balance VIN MINING</h3>
+                <h4 class="c__package-balance">1,0000200 &nbsp;&nbsp; ETH</h4>
+              </div>
+            </div>
+          </div>
+          <div class="c-package-card">
+            <div class="c-package-details">
+              <img
+                src="./Images/Etherium-black.png"
+                alt="Green T"
+                class="c__package-img"
+              />
+              <div class="c__details">
+                <h3 class="c-details__title">USDT Balance VIN MINING</h3>
+                <h4 class="c__package-balance">1,0000200 &nbsp;&nbsp; ETH</h4>
+              </div>
+            </div>
+          </div>
+          <div class="c-package-card">
+            <div class="c-package-details">
+              <img
+                src="./Images/Etherium-black.png"
+                alt="Green T"
+                class="c__package-img"
+              />
+              <div class="c__details">
+                <h3 class="c-details__title">USDT Balance VIN MINING</h3>
+                <h4 class="c__package-balance">1,0000200 &nbsp;&nbsp; ETH</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="c-dashboard">
+          <div class="c__user-packages">
+            <table class="c-packages-table table text-white">
+              <tr>
+                <th>Hash</th>
+                <th>Mined</th>
+                <th>Mining Network</th>
+              </tr>
+            </table>
+          </div>
+          <div class="c__balance-card">
+            <h2 class="c__balance-title">USDT Balance Crypto Fund</h2>
+            <div class="c__balance-container">
+              <h1 class="c__balance">58.000,00</h1>
+              <img src="./Images/GreenT.png" width="50" class="c__balance-icon" />
+            </div>
+            <button class="c__balance-btn">GO TO</button>
+          </div>
+          <div class="c__transactions">
+            <table class="c-transaction-table table text-white">
+              <tr class="table-head">
+                <th>Amount</th>
+                <th>Date</th>
+                <th>Status</th>
+              </tr>
+              <tr>
+                <td>
+                  <img src="c-transaction-icon" alt="" /> &nbsp; 0.1113333
+                  &nbsp;ETH
+                </td>
+                <td>Sep 04, 2021</td>
+                <td>Success</td>
+              </tr>
+            </table>
+          </div>
+          <div class="c__subd-package">
+              <h3 class="c__package-head">Package Subscribed</h3>
+              <h1 class="c__package-title">5VM</h1>
+          </div>
+        </div>
     </section>
-
-
-
+    </section>
 
     <!-- <script src="./JS/all.js"></script> -->
     <script
@@ -117,5 +244,5 @@
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
-</body>
+  </body>
 </html>

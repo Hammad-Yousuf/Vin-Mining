@@ -15,7 +15,7 @@ aside{
     border: 2px solid purple;
     border-radius: 10px;
     padding-top: var(--pt);
-    grid-row: 1/13 span;
+    grid-row: 1 / 13 span;
 }
 ul{
     padding: 0 !important;
@@ -153,12 +153,16 @@ a{
 }
 
 /* Page title */
-
 .c-page-title-container{
+    height: 25vh;
+    grid-row: 3/4 span;
+    grid-column: 3/5 span;
+}
+/* .c-page-title-container{
     grid-column: 3/6 span;
     grid-row: 2/4 span;
     align-self: flex-start;
-}
+} */
 .c-page-title{
     color: #fff;
 }

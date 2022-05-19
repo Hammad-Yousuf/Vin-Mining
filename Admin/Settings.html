@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./CSS/AdminCommon.css" />
+    <link rel="stylesheet" href="./CSS/settingsCommon.css" />
+    <link rel="stylesheet" href="./CSS/settings.css" />
+    <title>Admin Dashboard | Vin Mining</title>
+  </head>
+  <body>
+    <div class="c-icon-main-container">
+      <div class="c-icon-container">
+        <img src="./Images/Icons/user.png" alt="user icon" class="c__icon" />
+      </div>
+    </div>
+
+    <section class="c-logo-container">
+      <img src="./Images/logo.png" alt="Vin Mining" class="c__logo" />
+    </section>
+    <section class="c-navbar-container">
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <button
+          class="navbar-toggler"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="c-navbar navbar-nav">
+            <li class="c-nav__item">
+              <a href="./Adminsecurity.html" class="c-nav__link">Dashboard</a>
+            </li>
+            <li class="c-nav__item">
+              <a href="./Users.html" class="c-nav__link">Users</a>
+            </li>
+            <li class="c-nav__item">
+              <a href="./Deposit.html" class="c-nav__link">Deposit</a>
+            </li>
+            <li class="c-nav__item">
+              <a href="./Withdraw.html" class="c-nav__link">Withdraw</a>
+            </li>
+            <li class="c-nav__item">
+              <a href="./Settings.html" class="c-nav__link --active">Profile</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </section>
+
+    <main class="c-dashboard-container">
+      <section class="c-user-card">
+        <div class="c-user__img"></div>
+        <h1 class="c-user__name">Igor</h1>
+        <h3 class="c-user__email">Igor@gmail.com</h3>
+        <h1 class="c-user__status-head">Account Status</h1>
+        <h3 class="c-user__id">KYC ID</h3>
+        <h2 class="c-user__status">Verified</h2>
+        <h3 class="c-authentication-head">Account Verification 2FA</h3>
+        <h2 class="c-authentication-status">Enabled</h2>
+      </section>
+      <section class="c_main_container">
+        <section class="c-form-container">
+          <section class="c-page-title-container">
+            <h1 class="c-page-title">
+              <a href="./Settings.html">User Profile</a>
+            </h1>
+            <h1 class="c-page-title --active">
+              <a href="./Security.html">Security</a>
+            </h1>
+          </section>
+          <form action="" method="post" class="c-form mt-5">
+            <div class="c-form-input-container">
+              <label for="dob" class="c__label">Date of Birth</label
+              ><input type="date" class="c-form__input" />
+            </div>
+            <div class="c-form-input-container">
+              <label for="id-number" class="c__label">Id Number</label
+              ><input type="number" class="c-form__input" />
+            </div>
+            <div class="c-form-input-container">
+              <label for="address" class="c__label">Address</label
+              ><input type="text" class="c-form__input" />
+            </div>
+            <div class="c-form-input-container">
+              <label for="city" class="c__label">City</label
+              ><input type="text" class="c-form__input" />
+            </div>
+            <div class="c-form-input-container">
+              <label for="z-code" class="c__label">Zip Code</label
+              ><input type="number" class="c-form__input" />
+            </div>
+            <div class="c-form-input-container">
+              <label for="contry" class="c__label">country</label
+              ><input type="text" class="c-form__input" />
+            </div>
+            <div class="c-form-input-container">
+              <label for="phon" class="c__label">Phone Number</label
+              ><input type="phone" class="c-form__input" />
+            </div>
+            <div class="c-form-input-container">
+              <label for="email" class="c__label">Email</label
+              ><input type="email" class="c-form__input" />
+            </div>
+            <div class="c-form-input-container">
+              <label for="pin" class="c__label">Pin Code</label
+              ><input type="number" class="c-form__input" />
+            </div>
+            <div class="c-form-input-container">
+              <label for="id" class="c__label">Upload ID</label
+              ><input type="file" class="c-form_input --file-input" />
+            </div>
+          </form>
+        </section>
+        <section class="c-form-submit mt-5">
+          <input
+            type="submit"
+            value="Finish"
+            class="c-form__btn"
+            name="update"
+          />
+        </section>
+      </section>
+    </main>
+
+    <!-- <script src="./JS/all.js"></script> -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

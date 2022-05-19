@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../CSS/all.css">
+    <link rel="stylesheet" href="./CSS/AdminCommon.css" />
+    <link rel="stylesheet" href="./CSS/Deposit.css" />
+    <title>Admin Dashboard | Vin Mining</title>
+  </head>
+  <body>
+    <div class="c-icon-main-container">
+      <div class="c-icon-container">
+        <img src="./Images/Icons/user.png" alt="user icon" class="c__icon" />
+      </div>
+    </div>
+
+    <section class="c-logo-container">
+      <img src="./Images/logo.png" alt="Vin Mining" class="c__logo" />
+    </section>
+    <section class="c-navbar-container">
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="c-navbar navbar-nav">
+            <li class="c-nav__item">
+              <a href="./Adminsecurity.html" class="c-nav__link">Dashboard</a>
+            </li>
+            <li class="c-nav__item">
+              <a href="./Users.html" class="c-nav__link">Users</a>
+            </li>
+            <li class="c-nav__item">
+              <a href="./Deposit.html" class="c-nav__link --active">Deposit</a>
+            </li>
+            <li class="c-nav__item">
+              <a href="./Withdraw.html" class="c-nav__link">Withdraw</a>
+            </li>
+            <li class="c-nav__item">
+              <a href="./Settings.html" class="c-nav__link">Profile</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </section>
+
+    <main class="c-dashboard-container">
+      <div class="c__page-details-container">
+          <div class="c-total-users">
+              <h3 class="c__total-label">Deposit Request:</h3>
+          </div>
+      </div>
+      <div class="c__user-search-container">
+          <button class="c-excel-btn">Excel</button>
+          <form action="" method="post" class="c__user-search-form">
+              <label for="" class="c__user-search-label">Search</label>
+              <input type="text" class="c__search-user">
+          </form>
+      </div>
+
+      <table class="c-users table">
+          <tr>
+              <th>ID</th>
+              <th>Date/Time</th>
+              <th>Email</th>
+              <th>Amount</th>
+              <th>Coin Payment</th>
+              <th>Transaction ID</th>
+              <th>Staus</th>
+              <th>Action</th>
+          </tr>
+      </table>
+        
+    </main>
+
+    <script src="../JS/all.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

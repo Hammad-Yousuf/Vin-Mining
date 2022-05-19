@@ -1,0 +1,99 @@
+main{
+    grid-column: 3/13 span;
+    grid-row: 2/9 span;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4em;
+}
+.c_main_container{
+    display: grid;
+}
+.c-page-title-container{
+    display: flex;
+    gap: 2em;
+}
+.c-page-title{
+    font-size: 1.5em;
+}
+.c-page-title a{
+    text-decoration: none;
+    color: #fff;
+}
+.c-page-title a:hover{
+    color: var(--purple);
+
+}
+
+/* User Details Card */
+
+.c-user-card{
+    width: fit-content;
+    height: fit-content;
+    padding: 1em;
+    border: 2px solid #fff;
+    border-radius: 20px;
+    grid-row: 1 / 5 span;
+    justify-self: center;
+}
+
+.c-user__img{
+    width: 8em;
+    aspect-ratio: 1;
+    background: #fff;
+    border-radius: 50%;
+    margin-inline: auto;
+    margin-bottom: 1em;
+}
+
+.c-user-card> h1,
+.c-user-card> h2,
+.c-user-card> h3{
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+}
+.c-user__name,
+.c-user__status-head{
+    font-size: 1.3em;
+}
+.c-user__email{
+    font-size: .8em;
+}
+.c-user__id,
+.c-user__status,
+.c-authentication-head,
+.c-authentication-status{
+    font-size: .7em;
+}
+
+h2.c-user__status{
+    color: #00ff00;
+}
+h2.c-authentication-status{
+    color:#ff0000;
+}
+
+/* Form */
+
+.c-form{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.c-page-title{
+    font-size: 1.3em;
+}
+.c__label.--active{
+    color: var(--purple);
+    font-size: 1.8em;
+}
+.c-page-title.--active a{
+    color: var(--purple) !important;
+}
+.--active{
+    white-space: nowrap;
+    color: var(--purple);
+    text-decoration: none;
+}
+.--active:hover{
+    color: var(--purple);
+}

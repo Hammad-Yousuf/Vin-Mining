@@ -1,0 +1,45 @@
+.c-dashboard-container{
+    grid-column: 1/13 span;
+    grid-row: 3/9;
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: repeat(8,1fr);
+    row-gap: 3em;
+}
+.c__page-details-container{
+    grid-column: 3/13 span;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 4em;
+    color: #fff;
+}
+.c-total-users{
+    display: flex;
+    gap: 1em;
+}
+.c-add-user{
+    background-color: transparent;
+    color: #fff;
+    padding: 0.5em;
+    border: 2px solid var(--purple);
+}
+.c__user-search-container{
+    grid-column: 1/13 span;
+    display: flex;
+    justify-content: flex-end;
+}
+.c__user-search-label{
+    color: #fff;
+    font-size: 1.4em;
+    margin-inline-end: .5em;
+}
+.c-users{
+    grid-column: 1/13 span;
+    color: #fff;
+}
+.c-users tr{
+    border: none;
+}
+.c-users td{
+    border: none;
+}
